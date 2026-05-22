@@ -294,4 +294,59 @@ watch(() => props.isVisible, (newValue) => {
 .fade-leave-to {
   opacity: 0;
 }
+
+@media (max-width: 768px) {
+  /* Уменьшаем логотип, чтобы он влез в одну строку */
+  .logo-area {
+    font-size: 22px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+  }
+  .sub-logo {
+    font-size: 10px;
+    letter-spacing: 4px;
+  }
+
+  /* Делаем плашку компактнее */
+  .confidential-badge {
+    font-size: 8px;
+    padding: 5px 10px;
+    margin-bottom: 25px;
+  }
+
+  /* Спасаем бегущие цифры: уменьшаем шрифт и разрешаем им переноситься на новую строку */
+  .digital-grid {
+    gap: 6px;
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  .digital-num {
+    font-size: 14px;
+  }
+
+  /* Адаптируем терминал с логами */
+  .secure-logs {
+    padding: 15px 10px;
+    font-size: 9px; /* Делаем шрифт как в настоящем мини-терминале */
+    min-height: 110px;
+  }
+  
+  .log-entry {
+    flex-wrap: wrap; /* Позволяем длинным логам переноситься */
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  /* Прогресс-бар */
+  .progress-section {
+    margin-top: 30px;
+  }
+  .progress-meta {
+    font-size: 9px;
+    flex-direction: column; /* Ставим проценты под текстом */
+    align-items: center;
+    gap: 5px;
+  }
+}
 </style>

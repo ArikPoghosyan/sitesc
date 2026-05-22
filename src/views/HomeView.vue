@@ -99,4 +99,42 @@ const router = useRouter();
 .gold-btn:hover .btn-shine {
   left: 100%;
 }
+
+@media (max-width: 768px) {
+  .home-container {
+    padding-left: 5%; /* Уменьшаем пустую зону слева */
+    padding-right: 5%;
+    align-items: center; /* Центрируем контент по вертикали */
+    justify-content: center; /* Смещаем контент ближе к центру экрана */
+  }
+  
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем элементы внутри блока */
+    text-align: center;
+  }
+
+  .accent-line {
+    margin: 0 auto 20px auto; /* Центрируем золотую линию */
+  }
+
+  .hero-title {
+    font-size: 2.2rem; /* Уменьшаем заголовок */
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 35px;
+    padding: 0 10px; /* Чтобы текст не прилипал к краям экрана */
+  }
+
+  .gold-btn {
+    width: 100%; /* На телефоне широкая кнопка выглядит лучше и удобнее нажимается */
+    max-width: 300px; /* Но ограничиваем максимальную ширину */
+    padding: 16px 20px;
+  }
+}
 </style>
